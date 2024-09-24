@@ -18,7 +18,7 @@ jobs:
         with:
           flow: openlane2
           tools-repo: htfab/tt-support-tools
-          tools-ref: tt09-ihp-test
+          tools-ref: tt09-dev
 
   precheck:
     needs: gds
@@ -28,7 +28,7 @@ jobs:
         uses: htfab/tt-gds-action/precheck@tt09-ihp-test
         with:
           tools-repo: htfab/tt-support-tools
-          tools-ref: tt09-ihp-test
+          tools-ref: tt09-dev
 
   gl_test:
     needs: gds
